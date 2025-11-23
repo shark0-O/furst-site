@@ -15,7 +15,7 @@
 }
 
 body {
-    background: url('/img/фон\ для\ сайта\ геометри\ деш.png') no-repeat center center fixed;
+    background: url('img/фон\ для\ сайта\ геометри\ деш.png') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     font-size: 16px;

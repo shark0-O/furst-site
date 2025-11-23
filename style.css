@@ -1,0 +1,782 @@
+/* импортируем шрифт с сайта Google Fonts к себе на сайт  */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap');
+/* font-family: "Lexend Giga", sans-serif; */
+
+/*Звездочка это - стиль который задается всем объектам  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Чтобы не выходить за пределы блока если добавил padding */
+}
+
+:root{
+    --conteiner-padding: 0 15%;
+    --conteiner-padding-s: 0 10px;
+}
+
+body {
+    background: url('/img/фон\ для\ сайта\ геометри\ деш.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    font-size: 16px;
+    
+}
+
+section{
+    margin-bottom: 20px;
+}
+
+.container {
+    padding: var(--conteiner-padding);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+ul {
+    list-style: none;
+}
+
+/* ----------------------------------------------------- */
+/* Общие стили для медиа Desktop First */
+/* ----------------------------------------------------- */
+
+
+/* 1399px и меньше */
+@media (max-width: 1399px) {
+
+}
+
+
+/* 1199px и меньше */
+@media (max-width: 1199px) {
+   
+}
+
+
+/* 991px и меньше */
+@media (max-width: 991px) {
+   
+}
+
+
+/* 767px и меньше */
+@media (max-width: 767px) {
+   .container { padding: var(--conteiner-padding-s); }
+}
+
+
+/* 575px и меньше */
+@media (max-width: 575px) {
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Верхняя часть сайта */
+header{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(197, 245, 255, 0.575);
+    padding: var(--conteiner-margin);
+    z-index: 1000;
+    box-sizing: border-box;
+    backdrop-filter: blur(3px);
+    
+}
+
+.logo-and-name{
+    display: flex;
+}
+
+.logo-and-name p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav {
+    display: flex;
+    color: black;
+    
+}
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    padding: 20px;
+    width: 84px;
+    background-color: rgba(197, 245, 255, 0.575);
+    border-radius: 15px;
+}
+
+.sub-menu li {
+    margin-bottom: 20px;
+}
+
+.sub-menu li:last-child{
+    margin-bottom: 0px;
+}
+
+nav ul li:hover .sub-menu {
+   display: block; 
+   position: absolute;
+}
+
+
+
+
+/* 767pх и меньше */ 
+@media (max-width: 767px) {
+
+    
+    header{max-width: 720px;}
+
+    nav{max-width: 720px;}
+
+    nav ul li{max-width: 720px;}
+
+    .sub-menu{max-width: 720px;}
+}
+/* 575px и меньше */
+@media (max-width: 575px) {
+    
+    header{max-width: 100%;}
+
+    nav{max-width: 100%;}
+
+    nav ul li{max-width: 100%;}
+
+    .sub-menu{max-width: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    padding-top: 70px;
+}
+
+
+/* Дополнительные стили для контента */
+.hero__inner {
+    text-align: center;
+    z-index: 1;    
+    background: rgba(0, 136, 185, 0.545);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(3px);
+    font-size: 19px;
+}
+
+.hero__inner h1{
+    margin-bottom: 30px;
+    font-family: "Lexend Giga", sans-serif;
+    letter-spacing: 0.01em;
+    font-size: 2rem;
+    word-spacing: 0.3px;
+    color: rgb(155, 222, 227);
+    text-transform: uppercase;
+    text-shadow: 4px 2px 3px rgba(0, 0, 0, 0.51);
+    
+}
+
+.hero__inner h1 span{
+    color: orange;
+    font-weight: bold;
+}
+
+.hero__inner p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.01em;
+    word-spacing: 0.3px;
+    color: rgb(155, 222, 227);
+    text-shadow: 4px 2px 3px rgba(0, 0, 0, 0.51);
+    font-weight: bold;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* вторая секция */
+.selecteon-two{
+    background-color: rgba(127, 255, 212, 0);
+}
+
+.selecteon-two__iner{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.selecteon-two__iner__item{
+    position: relative;
+    padding: 5%;
+    width: calc(50% - 5px);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.selecteon-two__iner__item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    border-radius: 15px;
+    z-index: 1;
+    position: absolute;
+}
+
+.selecteon-two__iner__item__description{
+    padding: 45px;
+    background-color: rgba(128, 128, 128, 0.3);
+    backdrop-filter: blur(9px);
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.02em;
+    word-spacing: 0.4px;
+    color: rgb(155, 222, 227);
+    font-weight: bold;
+    z-index: 2;
+}
+
+.selecteon-two__iner__item__description h3{
+    
+    font-size: 32px;
+    margin-bottom: 7px;
+}
+
+/* 1399рx и меньше */
+/* @media (max-width: 1399px) { 
+
+} */
+
+/* 1199px и меньше */
+/* @media (max-width: 1199px) {
+    
+} */
+
+/* 991px и меньше */ 
+@media (max-width: 991px) {
+    
+   /* .selecteon-two{max-width: 960px;}
+
+    .selecteon-two__iner__item{max-width: 960px;}
+
+    .selecteon-two__iner__item img{max-width: 960px;}
+
+    .selecteon-two__iner__item__description{max-width: 960px;} */
+}
+
+/* 767pх и меньше */ 
+@media (max-width: 767px) {
+    
+    /* .selecteon-two{max-width: 720px;} */
+
+    .selecteon-two__iner__item{
+        width: 100%;
+        height: 100%;
+        padding: 60px 30px;
+    }
+
+    /* .selecteon-two__iner__item img{max-width: 720px;}
+
+    .selecteon-two__iner__item__description{max-width: 720px;} */
+}
+/* 575px и меньше */
+@media (max-width: 575px) {
+    
+    /* .selecteon-two{max-width: 100%;}
+
+    .selecteon-two__iner__item{max-width: 100%;}
+
+    .selecteon-two__iner__item img{max-width: 100%;}
+
+    .selecteon-two__iner__item__description{max-width: 100%;} */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rasdel{ margin-bottom: 10px; }
+
+.rasdel-text {
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    word-spacing: 0.4px; 
+    color: rgb(155, 222, 227);
+    font-weight: bold;
+    text-shadow: 4px 2px 3px rgba(0, 0, 0, 0.51);
+    background: rgba(0, 136, 185, 0.618);
+    border-radius: 15px;
+    backdrop-filter: blur(3px);
+}
+
+.rasdel-vtorov__inner{ letter-spacing: 0.1em; word-spacing: 0.3px;}
+
+.rasdel-tretiv__inner{ letter-spacing: 0.03em;}
+
+.rasdel-hetvert__inner{ letter-spacing: 0.02em;}
+
+.rasdel-pat__inner{ letter-spacing: 0.04em;}
+
+
+/* 767pх и меньше */ 
+@media (max-width: 767px) {
+    
+    .rasdel-vtorov{max-width: 720px;}
+
+    .rasdel-tretiv{max-width: 720px;}
+
+    .rasdel-hetvert{max-width: 720px;}
+
+    .rasdel-pat{max-width: 720px;}
+}
+/* 575px и меньше */
+@media (max-width: 575px) {
+    
+    .rasdel-vtorov{max-width: 100%;}
+
+    .rasdel-tretiv{max-width: 100%;}
+
+    .rasdel-hetvert{max-width: 100%;}
+
+    .rasdel-pat{max-width: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: rgb(107, 107, 107);
+    
+}
+
+/* .footer__inner {
+ 
+    
+} */
+
+footer .footer__inner > p {
+    display: flex ;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+footer .footer__inner p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(240, 240, 240);
+    text-shadow: 4px 2px 3px rgba(0, 0, 0, 0.51);
+    
+}
+
+footer input{
+    height: 16px;
+    border-radius: 15px;
+}
+
+
+
+
+.grid-container{
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.grid-container-item{
+    margin: 20px;
+}
+
+.item-4 {
+    min-width: max-content;
+}
+
+
+/* 767pх и меньше */ 
+@media (max-width: 767px) {
+
+    .item-4 { width: auto; min-width: none; }
+
+    .footer__inner input { width: 100%; }
+}
+/* 575px и меньше */
+@media (max-width: 575px) {
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации */
+/* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации */
+/* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации */
+/* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации */
+/* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации */
+/* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации */
+/* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации */
+/* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации */
+/* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации */
+/* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации *//* страница регестрации */
+
+.registration-page{
+    background-color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+.registration-page form{
+    background: rgba(0, 136, 185, 0.618);
+    padding: 30px;
+    
+    border-radius: 15px;
+    backdrop-filter: blur(4px);
+
+}
+
+.registration-page label{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.1em;
+    word-spacing: 0.3px;
+    text-shadow: 4px 2px 3px rgba(0, 0, 0, 0.51);
+}
+
+.registration-page input{
+    margin-bottom: 15px;
+    
+}
+
+.registration-page h1{
+    color: white ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.1em;
+    word-spacing: 0.3px;
+    text-shadow: 4px 2px 3px rgba(0, 0, 0, 0.51);
+    margin-bottom: 15px;
+}
+
+
+
+
+
+/* 767pх и меньше */ 
+@media (max-width: 767px) {
+    
+    .registration-page{max-width: 720px;}
+
+    .registration-page form{max-width: 720px;}
+
+    .registration-page label{max-width: 720px;}
+
+    .registration-page input{max-width: 720px;}
+
+    .registration-page h1{max-width: 720px;}
+}
+/* 575px и меньше */
+@media (max-width: 575px) {
+    
+    .registration-page{max-width: 100%;}
+
+    .registration-page form{max-width: 100%;}
+
+    .registration-page label{max-width: 100%;}
+
+    .registration-page input{max-width: 100%;}
+
+    .registration-page h1{max-width: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.entrance-page{
+    background-color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.entrance-page form{
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 136, 185, 0.618);
+    padding: 30px;
+    background: rgba(0, 136, 185, 0.618);
+    border-radius: 15px;
+    backdrop-filter: blur(4px);
+
+}
+
+.entrance-page button{
+    display: block;
+    
+    padding: 10px 40px !important;
+}
+
+.entrance-page label{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.1em;
+    word-spacing: 0.3px;
+    text-shadow: 4px 2px 3px rgba(0, 0, 0, 0.51);
+}
+
+
+
+.entrance-page h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.1em;
+    word-spacing: 0.3px;
+    text-shadow: 4px 2px 3px rgba(0, 0, 0, 0.51);
+    
+}
+
+.entrance-page a{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.1em;
+    word-spacing: 0.3px;
+    text-shadow: 4px 2px 3px rgba(0, 0, 0, 0.51);
+    
+}
+
+.form-bottom a{
+    transition: 0.3s;
+}
+
+.form-bottom a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.form-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-bottom p {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.1em;
+    word-spacing: 0.3px;
+    text-shadow: 4px 2px 3px rgba(0, 0, 0, 0.51);
+}

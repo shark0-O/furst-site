@@ -1,0 +1,340 @@
+<!-- CTRL + / делает комментарий, комментарий вижу только я, компьютер их пропускает -->
+<!-- Чтобы создать начальный код надо написать ! знак восклицания и нажать Enter -->
+<!-- HTML это язык программирования на котором создаются страницы сайта -->
+<!-- Чтобы запустить сайт можно просто открыть его в папке где он сохранен или... -->
+<!-- Можно запустить сайта через расширение Live Server, нужно в коде HTML нажать ПКМ - Open with live Server -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link подключает CSS к HTML, в href указываем путь до CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <!--  -->
+    <script src="https://kit.fontawesome.com/f73ea55d07.js" crossorigin="anonymous"></script>
+
+    <!-- Название вкладки -->
+    <title>новости по Геометри Деш</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-and-name">
+            <img src="" alt="лого сайта">
+            <p>GD News</p>
+        </div>
+
+
+
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i> Главная</a></li>
+                <li><a href="#"><i class="fa-solid fa-address-book"></i> Контакты</a></li>
+
+                <li>
+                    <a href="#"><i class="fa-solid fa-share-nodes"></i> Соц. сети</a>
+
+                    <ul class="sub-menu">
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">Telegram</a></li>
+                    </ul>
+                </li>
+
+
+                <li><a href="/login-page.html"><i class="fa-solid fa-right-to-bracket"></i> Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <!-- первый раздел -->
+        <section class="hero container">
+            <div class="hero__inner ">
+                <!-- Заголовки бывают от h1 до h6 -->
+                <h1><span><i class="fa-solid fa-house"></i> Articles and news</span> about Geometry Dash game</h1>
+                <!-- параграф - обычный текст -->
+                <p>Geometry Dash Hub – ваш главный источник статей и новостей по игре Geometry Dash! <br>
+                    У нас вы найдете: <br>
+                    🔥 Свежие новости – обновления, ивенты и важные анонсы. <br>
+                    📖 Полезные статьи – гайды, советы по прохождению и созданию уровней. <br>
+                    🎮 Разборы сложных моментов – как пройти сложные уровни и добиться топовых результатов. <br>
+                    Присоединяйтесь, чтобы быть в курсе всего, что происходит в мире Geometry Dash! 🚀
+                </p>
+            </div>
+        </section>
+
+
+        <!-- второй раздел на сайте -->
+        <section class="selecteon-two container">
+            <div class="selecteon-two__iner ">
+                <!-- карточка 1-->
+                <div class="selecteon-two__iner__item">
+                    <div class="selecteon-two__iner__item__description">
+                        <h3>Название</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae vitae placeat omnis
+                            ducimus
+                            quisquam quia error commodi sit eveniet! Magnam ut mollitia commodi neque ipsum nemo
+                            delectus
+                            dolorum unde obcaecati?</p>
+                    </div>
+                    <img src="/img/lvl1.jpg" alt="картинка">
+                    <!-- img это тег который добавляет картинку -->
+                    <!-- src это доп. свойство (атрибуты) тега которое указывает путь до картинки -->
+                    <!-- / означает обращение к главной папке на сайте -->
+                    <!-- alt это доп. свойство (атрибуты) текст который появляется если картинка сломалась -->
+                    <!-- width это доп. свойство (атрибуты) ширина картинки -->
+                    <!-- title это доп. свойство (атрибуты) всплывающая подсказка для при наведении мышкой на картинку -->
+                </div>
+                <!-- карточка 2 -->
+                <div class="selecteon-two__iner__item">
+                    <div class="selecteon-two__iner__item__description">
+                        <h3>Название</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae vitae placeat omnis
+                            ducimus
+                            quisquam quia error commodi sit eveniet! Magnam ut mollitia commodi neque ipsum nemo
+                            delectus
+                            dolorum unde obcaecati?</p>
+                    </div>
+                    <img src="/img/lvl2.webp" alt="картинка">
+                </div>
+                <!-- карточка 3-->
+                <div class="selecteon-two__iner__item">
+                    <div class="selecteon-two__iner__item__description">
+                        <h3>Название</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae vitae placeat omnis
+                            ducimus
+                            quisquam quia error commodi sit eveniet! Magnam ut mollitia commodi neque ipsum nemo
+                            delectus
+                            dolorum unde obcaecati?</p>
+                    </div>
+                    <img src="/img/lvl3.jpg" alt="картинка">
+                </div>
+
+                <!-- карточка 4-->
+                <div class="selecteon-two__iner__item">
+                    <div class="selecteon-two__iner__item__description">
+                        <h3>Название</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae vitae placeat omnis
+                            ducimus
+                            quisquam quia error commodi sit eveniet! Magnam ut mollitia commodi neque ipsum nemo
+                            delectus
+                            dolorum unde obcaecati?</p>
+                    </div>
+                    <img src="/img/lvl4.webp" alt="картинка">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- остальные разделы -->
+        <section class="rasdel container">
+            <div class="rasdel-text rasdel-vtorov__inner">
+                <h2>Обновление 2.2</h2>
+                <p><b>Обновление 2.2</b> — двенадцатое крупное обнавление Geometry Dash, которое официально вышло 20
+                    декабря
+                    2023 года в 04:30 по МСК в Steam на персональные компьютеры и Google Play Market с App Store на
+                    мобильные
+                    устройства.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="rasdel container">
+            <div class="rasdel-text rasdel-tretiv__inner">
+                <h3><b>Нововведения</b></h3>
+                Основные крупные нововведения, которые оно в себя включает: иконки победителей Icon Contest, новый режим
+                — Swing
+                (Свинг) и режим платформера, 88 новых триггеров, внутриигровой FPS Bypass, один уровень в классическом
+                режиме —
+                Dash, 4 уровня в платформенном режиме в Башне (The Tower), два новых магазина: магазин механика и
+                магазин
+                алмазов, добавление новых кодов и иконок, и много чего ещё.
+                В обновлении была добавлена возможность загружать полученные иконки из дополнений (World, Meltdown,
+                SubZero) в
+                оригинальную игру.
+                Багфиксы
+                Эти обновления в основном являются исправлением багов. В январе 2024 года их вышло 5: 2.201, 2.202,
+                2.203, 2.204
+                и 2.205, причём первые четыре — эксклюзивно для Steam, а пятое — только на мобильные устройства. 1 июня
+                в Steam
+                и на мобильных устройствах вышло обновление 2.206. 9 ноября в Steam вышло обновление 2.207.
+                Нововведения:
+                Режим практики для режима платформера.
+                Стоимость многих нововведённых вещей была снижена.
+                Игроки, купившие эти вещи до обновления 2.201, получили возврат сфер.
+                Возможность включения режима отображения хитбоксов в практике.
+                Возможность отображения полной статистики игрока.
+                Возможность свободного копирования любого уровня, вышедшего после 2.2.
+                Немного новых иконок.
+                Возвращено значение трения по умолчанию в воздухе. Новое трение по-прежнему на земле.
+                Исправлено скольжение по ледяным блокам.
+                Добавлено подробное отображение демонов в профиле.
+                Добавлены некоторые инструменты редактора: масштабирование отдельных объектов, перемещение наполовину
+                сетки и
+                события падения.
+                Добавлено быстрое меню (ускоряет переходы между страницами).
+                Добавлен безрамочный полноэкранный режим.
+                Возвращён дополнительный кадр сферы.
+                Добавлен дополнительный просмотр игрового поля.
+                Уменьшено трение воздуха в платформере.
+                Игнорирование повреждений на уровнях в редакторе.
+                Скрытие экрана завершения уровня.
+                Возвращение к последней контрольной точке после завершения уровня в режиме практики.
+                Расчётное время прохождения уровней-платформеров.
+                Музыкальная библиотека лейбла NCS с более чем 1200 треков, все треки данного лейбла помечены отдельным
+                значком.
+                Были добавлены четыре новых потерянных испытаний — NCS I Gauntlet, NCS II Gauntlet, Space Gauntlet и
+                Cosmos
+                Gauntlet.
+                Добавлен новый элемент игры — Уровни-события (или Событийные уровни).
+                Добавлено новое четвёртое секретное хранилище — Призрак.
+                Исправление багов.
+                Много чего другого.
+            </div>
+        </section>
+
+
+        <section class="rasdel container">
+            <div class="rasdel-text rasdel-hetvert__inner">
+                <h3><b>Обновление 2.21</b></h3>
+                Обновление 2.21 добавит то, что планировалось в обновлении 2.2, но было отложено в конце разработки в
+                связи с
+                нехваткой времени. Планируется к скорому выходу после 2.2. Из основных компонентов, в обновлении будет
+                добавлен
+                новый официальный демон Explorers (возможно в 2.3), второй этаж в Башне, The Map (карта), новые иконки и
+                возможно, режим Versus, а также прочий контент, не попавший в 2.2.
+            </div>
+        </section>
+
+
+        <section class="rasdel container">
+            <div class="rasdel-text rasdel-pat__inner">
+                <h3><b>Интересные факты</b></h3>
+                Обновление 2.2 продолжило ряд обновлений с новым режимом: 1.9 — волна, 2.0 — робот, 2.1 — паук, 2.2 —
+                свинг.
+                Известно, что бета-тестерами версии 2.2 являлись RobTop, Viprin, AutoNick, Subwoofer и mbed.
+                В этом обновлении было добавлено самое большое количество иконок, когда-либо выпущенное в обновлениях.
+                Всего их
+                700, лишь у одного куба их более 400, включая заблокированные.
+                RobTop начал раскрывать планы на 2.2 ещё до того, как вышел 2.1, когда он раскрыл планы на добавление
+                триггеров
+                камеры.
+                Он также сделал это для обновлений 2.1 и 2.3.
+                Geometry Dash SubZero взломали и получили доступ к редактору, в котором было добавлено 8 новых
+                триггеров[4], 2
+                новых фона и новые опции, в том числе режим свободного полёта и блокировка слоёв. Но все триггеры были
+                покрашены
+                в триггеры цвета и т.п., т.к. RobTop тогда ещё не создал отдельные текстуры для них.
+                Также был способ получить доступ к этому редактору в Geometry Dash World и выложить уровень без читов.
+                Не
+                работает с версии 1.04.
+                Обновление 2.2 является обновлением с наибольшим количеством выпущенных предпоказов и предпросмотров.
+                Также у
+                этого обновления самый большой срок ожидания среди всех крупных обновлений. С момента выхода 2.1 до
+                выхода
+                обновления 2.2 прошло около 6 лет и 11 месяцев, а с момента выхода 2.11 — около 6 лет и 1 месяца.
+                Таким образом на момент выхода обновления его ожидание составило более ⅔ истории Geometry Dash. Игра
+                вышла 13
+                августа 2013, её возраст на момент выхода обновления — 10 лет 4 месяца. Разработка обновления заняла в 2
+                раза
+                больше времени, чем все предыдущие крупные обновления вместе взятые.
+                Также третий Sneak Peek занимает рекорд по длительности — 1 минута 49 секунд.
+                Если оценивать четвёртый Sneak Peek по продолжительности эпизода в видео, то он длится 2 минуты 10
+                секунд; если
+                оценивать только по продолжительности геймплея — 1 минута 42 секунды.
+                Изначально обновление должно было быть небольшим обновлением, но разработчик написал, что "обновление
+                становилось всё больше с течением времени".
+                Исходя из этого, можно сказать, что обновление является самым крупным за всю историю игры.
+                По шведскому времени (часовой пояс Роберта Топалы) первый и второй предварительный просмотры, а также
+                видео к
+                десятилетию Geometry Dash имели время премьеры 22:00, однако это оказалось лишь совпадением.
+                Некоторые удивились, когда во время зимних каникул нашли пост в Twitter GuitarHeroStyles, который
+                предполагал
+                закономерность выхода Sneak Peek'а 13 августа 2018 года. GuitarHeroStyles был прав, пусть и ошибся на 5
+                лет.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Маркерованый список -->
+        <!-- <ul>
+            <li>пункт</li>
+            <li>пункт</li>
+            <li>пункт</li>
+            <li>пункт</li>
+            <li>пункт</li>
+            <li>пункт</li>
+        </ul>
+        <ol>
+            <li>пункт</li>
+            <li>пункт</li>
+            <li>пункт</li>
+            <li>пункт</li>
+            <li>пункт</li>
+        </ol>
+        
+        <li><b>Делает жирныйм текст.</b> Lorem ipsum dolor sit. Laborum, eum.</li>
+        <li><i>Делает курсивы наклонный текст</i> Lorem elit. Velit, consequuntur?</li>
+        <li><mark>Делает выделенный текст маркером</mark> elit. Fugit, nisi.</li>
+        <li><del>Lorem ipsum dolor sit amet consectetur adipisicing elit.</del> Iste, natus?</li>
+        <li>Lorem в квадрате<sup>2</sup> ipsum dolor sit amet.</li>
+        <li><del><i><b>Комбинируем все стили для текста</b></i></del></li>
+        <li>Lorem с нижним добавлением<sub>нижнее добавление</sub> consectetur adipisicing elit. Ullam, praesentium.</li> -->
+    </main>
+
+    <footer>
+        <div class="footer__inner container">
+            <p><b>Geometry desh Hub</b></p>
+            <div class="grid-container">
+                <div class="grid-container-item">
+                    <p><b>Сайт</b></p>
+                    <p>Главная</p>
+                    <p>Нашли ошибку</p>
+                    <p>О нас</p>
+
+                </div>
+                <div class="grid-container-item">
+                    <p><b>Соц сети</b></p>
+                    <p>YouTube</p>
+                    <p>TikTok</p>
+                    <p>Telegram</p>
+                </div>
+                <div class="grid-container-item">
+                    <p><b>Текст</b></p>
+                    <p>Текст</p>
+                    <p>Текст</p>
+                    <p>Текст</p>
+                </div>
+                <div class="grid-container-item item-4">
+                    <p><b>текст</b></p>
+                    <p>текст</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Адрес электронной почты</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

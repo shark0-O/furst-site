@@ -118,7 +118,8 @@ ul {
 header{
     position: fixed;
     height: 50px;
-    width: 100%;
+    width: 60%;
+    margin-left: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -127,6 +128,7 @@ header{
     z-index: 1000;
     box-sizing: border-box;
     backdrop-filter: blur(3px);
+    border-radius: 0 0 15px 15px;
     
 }
 
@@ -154,23 +156,19 @@ nav ul li {
 
 .sub-menu{
     display: none;
+    flex-direction: column;
     position: absolute;
     padding: 20px;
-    width: 84px;
     background-color: rgba(197, 245, 255, 0.575);
     border-radius: 15px;
+    gap: 20px;
+    color: rgb(255, 255, 255);
 }
 
-.sub-menu li {
-    margin-bottom: 20px;
-}
 
-.sub-menu li:last-child{
-    margin-bottom: 0px;
-}
 
 nav ul li:hover .sub-menu {
-   display: block; 
+   display: flex; 
    position: absolute;
 }
 
@@ -316,16 +314,18 @@ main{
 }
 
 .selecteon-two__iner{
-    display:flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    display:grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 15px;
 }
 
 .selecteon-two__iner__item{
     position: relative;
-    padding: 5%;
+    /* width: 400px;
+    height: 400px; */
+    /* padding: 5%;
     width: calc(50% - 5px);
-    height: 50vh;
+    height: 50vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -343,22 +343,38 @@ main{
 }
 
 .selecteon-two__iner__item__description{
-    padding: 45px;
-    background-color: rgba(128, 128, 128, 0.3);
-    backdrop-filter: blur(9px);
-    border-radius: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 2;
+}
+
+.selecteon-two__iner__item__description h3{
+    display: flex;
+    justify-content: center;
     letter-spacing: 0.02em;
     word-spacing: 0.4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px;
+    font-size: 32px;
+    background-color: rgba(128, 128, 128, 0.3);
+    backdrop-filter: blur(9px);
+    border-radius: 15px 15px 0 0;
     color: rgb(155, 222, 227);
     font-weight: bold;
     z-index: 2;
 }
 
-.selecteon-two__iner__item__description h3{
-    
-    font-size: 32px;
-    margin-bottom: 7px;
+.selecteon-two__iner__item__description p{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.02em;
+    word-spacing: 0.4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px;
+    background-color: rgba(128, 128, 128, 0.3);
+    backdrop-filter: blur(9px);
+    border-radius: 0 0 15px 15px;
+    color: rgb(155, 222, 227);
+    font-weight: bold;
+    z-index: 2;
 }
 
 /* 1399рx и меньше */
